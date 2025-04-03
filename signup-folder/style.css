@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+.container h2::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 2.5px;
+    width: 100px;
+    background-color:blue;
+    border-radius: 20px;
+}
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+input:focus {
+    outline: none;
+}
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+fieldset {
+    border: none;
+    /* padding: 10px; */
+}
+fieldset legend {
+    color: blue;
+    margin-bottom: 10px;
+}
+.btn{
+    margin: 10px auto;
+    /* border: 2px solid red; */
+    width: 60%;
+}
+.container button {
+    background-color: #454ea0;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+}
+.container button:hover {
+    background-color:rgb(24, 24, 202);
+}
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.login{
+    text-align: center;
+    font-size: 15px;
+}
+.login a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.login a:hover{
+    color: blue;
+}
+
+ #err_1, #err_2, #err_4{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#err_3{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+    .container h2::before {
+        width: 70px;
+    }
+    .btn {
+        width: 80%;
+    }
+}

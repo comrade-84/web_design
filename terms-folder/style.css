@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.4;
+}
+h1 {
+    text-align: center;
+}
+.content {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(4, 4, 68);
+    color: #fff;
+    padding: 5px 10px;
+}
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+    
+}

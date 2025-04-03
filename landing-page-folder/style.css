@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Barlow Semi Condensed;
+}
+body {
+  background: /*linear-gradient(to top, blue,blac),*/ url(".jpg");
+  background-size: cover;
+  background: #140054;
+  background-position: center;
+  /* background-repeat:no-repeat ;  */
+  /* padding:10px; */
+}
+.logo {
+  margin: 10px 15px;
+  color: #ff5e00;
+  background: transparent;
+  font-weight: 800;
+  font-size: 22px;
+  float: left;
+  border: 1px solid#ffeaff99;
+  border-radius: 10px;
+  padding: 2px;
+  box-shadow: 3px 1px 2px gray;
+}
+/* .nav-links{
+  position: sticky;
+  border: 2px solid green;
+} */
+main ul {
+  display: flex;
+  /*border:2px solid red;*/
+  float: right;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 15px;
+  padding-right: 6px;
+}
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: white;
+  transition: 0.2s;
+}
+main ul li a:hover {
+  color: #ff5e02;
+  font-size: 0.9rem;
+}
+li a:focus {
+  color: #ff5e02;
+  text-decoration: underline 3px blue;
+}
+.search {
+  /*border:2px solid red;*/
+  margin: 18px auto;
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  height: 60px;
+  width: 300px;
+}
+input {
+  height: 34px;
+  border-right: none;
+  border: none;
+  margin-top: 1px;
+  /* border-bottom:0.5px solid grey;
+border-left: 0.5px solid grey;
+border-top: 0.5px solid grey; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  font-size: 18px;
+  padding: 10px;
+  color: #ff5e00;
+  text-transform: italics bold;
+}
+label button {
+  width: 80px;
+  height: 34px;
+  background: #ff5e02;
+  font-size: 17px;
+  border: none;
+  margin-left: -4px;
+  position: relative;
+  bottom: -1.7px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+label button:hover {
+  background: #ff5f8b;
+  color: white;
+}
+hr {
+  height: 2px;
+  background: grey;
+  width: 100%;
+}
+/* -------content- ---------*/
+
+.content-box {
+  /* border:2px solid brown ; */
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  width: 95%;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.images {
+  height: 400px;
+  width: 700px;
+  /* border: 2px solid green; */
+}
+.images img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.content {
+  background-color: transparent;
+  height: 250px;
+  width: 700px;
+  /* border: 2px solid green; */
+  margin-top: 85px;
+}
+.content h1 {
+  /* background: #140054; */
+  font-size: 2rem;
+  color: white;
+  text-transform: capitalize;
+}
+.content p {
+  /* background: #140054; */
+  font-size: 1rem;
+  padding-top: 8px;
+  line-height: 19px;
+  letter-spacing: 1.2px;
+  color: white;
+}
+.content button {
+  height: 40px;
+  width: 100px;
+  background: #ff5e02;
+  padding: 3px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  /* margin-left: 50%; */
+}
+.content button:hover {
+  background: #ff5f8b;
+}
+
+.content button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------coursecontainer ------*/
+
+.course-container-box {
+  /* height: auto; */
+  /* width: auto; */
+  margin-bottom:40px ;
+}
+.course-container {
+  /* height: auto; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  padding: px;
+  /* height: 650px; */
+}
+.course-container-box h1 {
+  text-align: center;
+  color: white;
+}
+.course-container-box p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.courses h1 {
+  text-align: center;
+  color: #ff5e02;
+  font-size: 1.8rem;
+}
+.courses p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.courses:hover p {
+  font-size: 0.9rem;
+}
+.courses{
+  /* height: 170px; */
+  width: 300px;
+  background: #000279;
+  margin: 0px auto;
+  border-radius: 9px;
+  padding: 2px;
+  transition: .2s;
+}
+
+.courses:hover{
+  box-shadow: 2px 2px 2px #fff;
+}
+.courses .btn {
+  width: 150px;
+  /* border: 2px solid green; */
+  margin: 10px auto;
+}
+.courses button {
+  height: 35px;
+  width: 150px;
+  /* margin-left: 25%; */
+  margin-top: 15px;
+  border-radius: 7px;
+  border: none;
+  transition: 0.3s ease-in;
+  background: #ff5e02;
+  color: #fff;
+  font-weight: 500;
+}
+
+.courses button:hover {
+  background: white;
+  color: #ff5e02;
+}
+
+.courses button a:hover {
+  color: #ff5e02;
+}
+.more-course {
+  width: 100%;
+  /* border: 2px solid red; */
+  /* height: 120px; */
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.more{
+  width: 50%;
+  /* height: 100%; */
+  margin-bottom: 20px;
+}
+.more a p i {
+  font-size: 20px;
+}
+.more a {
+  text-decoration: none;
+  color: white;
+}
+address {
+  /* border: 2px solid red; */
+  font-size: 18px;
+  margin: 10px 0;
+}
+footer {
+  background: #1a1f34;
+  text-align: center;
+  color: #ffeaea;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  /* margin-top: -400px; */
+}
+footer button {
+  width: 20%;
+  height: 35px;
+  background: ff5e02;
+  border: none;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+footer button a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ff5e02;
+}
+.linkss {
+  height: auto;
+  width: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.linkss .facebook {
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.linkss i {
+  color: #fde8e8;
+}
+.linkss .twitter {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(97, 97, 175);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.linkss .instagram {
+  height: 35px;
+  width: 35px;
+  background: linear-gradient(rgb(233, 2, 2), rgb(209, 209, 2));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.linkss .youtube {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(255, 17, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+footer a {
+  text-decoration: none;
+}
+.menu {
+  /* height: 300px; */
+  width: 200px;
+  /* border: 2px solid red; */
+  position: absolute;
+  /* right: -200px; */
+  /* right: 0; */
+  display: none;
+  background-color: rgb(110, 110, 230, 0.9);
+  /* opacity:; */
+}
+
+.menu ul {
+  /* border: 2px solid gold; */
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  display: block;
+}
+.menu ul li {
+  margin: 20px 0;
+  border: 0;
+  width: 100%;
+  padding: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.menu ul li a:hover {
+  background-color: #000279;
+  width: 100%;
+  color: #ff5e02;
+  cursor: pointer;
+}
+.hamburger-menu {
+  height: 40px;
+  width: 40px;
+  /* border: 2px solid #fff; */
+  position: absolute;
+  right: 0;
+  margin: 5px 10px;
+  border-radius: 10px;
+  display: none;
+}
+.hamburger-menu i {
+  color: #fff;
+  font-size: 35px;
+}
+.checks {
+  display: none;
+}
+#checks:checked ~ .menu {
+  /* left:120px; */
+  display: block;
+}
+
+/* -------footer-------- */
+
+@media screen and (max-width: 500px) {
+  
+  .course-container {
+    /* height: 600px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .courses {
+    width: 95%;
+  }
+  .course-container-box h1 {
+    font-size: 1.4rem;
+  }
+  .course-container-box p {
+    font-size: 0.9rem;
+  }
+  .content {
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+  footer button {
+    width: 30%;
+    padding: 5px 10px;
+  }
+  footer button a {
+    font-size: 16px;
+  }
+  .content h1 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+    color: #fde8e8;
+    font-weight: 600;
+  }
+  .course-container-box h1 {
+    font-size: 1.4rem;
+  }
+  .courses p {
+    font-size: 15px;
+  }
+  .courses p:hover {
+    font-size: 0.92rem;
+  }
+  .content-box {
+    /* border:2px solid brown ; */
+    display: block;
+  }
+  .images img {
+    display: none;
+  }
+  .images {
+    height: 0%;
+    /* width: 0%; */
+  }
+  .content{
+    background: url(mobile.png);
+    background-size: cover;
+    /* height: 250px; */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .search {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  label button {
+    display: none;
+  }
+  .more a p i {
+    font-size: 16px;
+  }
+  .menu {
+    display: none;
+  }
+  main ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .j-btn{
+    margin-bottom: 100px;
+    border: 1px solid gold;
+  }
+}

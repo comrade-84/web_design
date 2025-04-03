@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/signup-folder/style.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form onsubmit="input_checker();return false" action="" method="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <p id="err_1"></p>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p id="err_2"></p>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <p id="err_3">password must contain atleast a upercase, a special character, and a number</p>
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password">
+            <p id="err_4"></p>
+            <fieldset>
+                <legend>Select Gender</legend>
+                <label for="male">
+               <input type="radio" checked name="male/female"id="male"> Male
+               </label>
+               <label for="female">
+               <input type="radio" name="male/female"id="female"> Female
+               </label>
+               </fieldset>
+               <div class="btn">
+            <button id="btn" type="submit">Submit Now</button>
+            
+        </div>
+        <div class="login">
+            Already have an account? <a href="/login-folder/index.html" target="_blank">Login</a>
+        </div>
+        </form>
+    </div>
+
+
+    <script src="/signup-folder/script.js"></script>
+</body>
+</html>
